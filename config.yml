@@ -1,0 +1,11 @@
+# cluster_config.yml - cluster configuration
+__default__:
+    time: 10:00:00 # time limit for each job
+    nodes: 1
+    ntasks-per-node: 1 # Request n cores be allocated per node.
+    mem: 60GB
+trimming:
+    ntasks-per-node: 9
+spades:
+    ntasks-per-node: 36
+    mem: 60GB
