@@ -1,5 +1,9 @@
 # Snakemake_Training
 
+## Author: Christopher Powers
+### The university of Rhode Island
+
+
 Clone this git repository into a directory on andromeda.
 
 
