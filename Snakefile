@@ -27,7 +27,7 @@ rule trimming:
         module purge
         module load Trimmomatic/0.39-Java-11
         java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -threads 9 -phred33 -basein {input} \
-            -baseout 00_reads/{wildcards.sample}_trimmed.fastq.gz ILLUMINACLIP:reference/sequencing_adapters.fa:2:30:10 \
+            -baseout 00_reads/{wildcards.sample}_trimmed.fastq.gz ILLUMINACLIP:sequencing_adapters.fa:2:30:10 \
             LEADING:25 TRAILING:25 SLIDINGWINDOW:4:25 MINLEN:36
         touch {output}
         """
